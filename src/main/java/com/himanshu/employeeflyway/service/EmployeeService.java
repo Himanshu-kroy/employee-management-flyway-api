@@ -1,0 +1,14 @@
+package com.himanshu.employeeflyway.service;
+
+import com.himanshu.employeeflyway.dto.EmployeeRequestDTO;
+import com.himanshu.employeeflyway.dto.EmployeeResponseDTO;
+
+import java.util.List;
+
+public interface EmployeeService {
+    EmployeeResponseDTO createEmployee(EmployeeRequestDTO requestDTO);
+    List<EmployeeResponseDTO> getAllEmployees();
+    EmployeeResponseDTO getEmployeeById(Long id);
+    EmployeeResponseDTO updateEmployee(Long id, EmployeeRequestDTO requestDTO);
+    void deleteEmployee(Long id);
+}
